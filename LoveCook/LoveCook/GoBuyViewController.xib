@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GoBuyViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byu-04-el3">
+                    <rect key="frame" x="72" y="119" width="456" height="69"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="69" id="lzZ-cc-KQI"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" backgroundImage="zhifubao.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ZhiFuBao:" destination="-1" eventType="touchUpInside" id="by1-2D-Gzi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lz4-MA-KbN">
+                    <rect key="frame" x="72" y="227" width="456" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="IIP-wi-9L7"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="weixin.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lz4-MA-KbN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="72" id="2JQ-Zd-LKQ"/>
+                <constraint firstItem="Byu-04-el3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="119" id="HzJ-hM-SKw"/>
+                <constraint firstItem="lz4-MA-KbN" firstAttribute="top" secondItem="Byu-04-el3" secondAttribute="bottom" constant="39" id="MOW-K3-wOX"/>
+                <constraint firstAttribute="trailing" secondItem="Byu-04-el3" secondAttribute="trailing" constant="72" id="PXN-L3-wt7"/>
+                <constraint firstAttribute="trailing" secondItem="lz4-MA-KbN" secondAttribute="trailing" constant="72" id="e1G-EN-WcJ"/>
+                <constraint firstItem="Byu-04-el3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="72" id="vL2-AO-ejY"/>
+            </constraints>
+            <point key="canvasLocation" x="397" y="346"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="weixin.png" width="305" height="72"/>
+        <image name="zhifubao.png" width="350" height="104"/>
+    </resources>
+</document>
